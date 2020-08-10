@@ -1,7 +1,7 @@
 version : 2
 mergeable :
   - when : pull_request.*
-    varidate :
+    validate :
       - do : title # WIP から始まるプルリクエストをマージできないようにする
         must_exclude : 
           regex : ^\[WIP\]
